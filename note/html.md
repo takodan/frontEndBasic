@@ -1,18 +1,18 @@
 # HTML
-## this note will write in chinese
+this note will write in chinese
 ## 0216 HTML 簡介、語法基礎教學
-### tag 標籤
+### tag標籤
 開頭標籤：\<html>、\<body>
 結束標籤：\<html>、\</body>  
 ```html
 <head><title>標題文字</title></head>
 ```
-### tag屬性
+### tag的屬性
 屬性名稱 = "屬性內容"  
 ```html
 <div id= "title"> class= "head">Title</div>
 ```
-### 無內文tag
+### 無內文的tag
 ```html
 <img></img>、<hr></hr> 也可以寫成<img/>、<hr/>
 ```
