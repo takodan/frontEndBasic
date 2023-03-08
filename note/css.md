@@ -120,4 +120,4 @@ width:50%
 預設隨內容大小縮放  
 height:300px
 height:100%  
-### \! TIP \! 只有block區塊才能設定，例如<div>
+### \! TIP \! 只有block區塊才能設定，例如 \<div>
