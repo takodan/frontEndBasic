@@ -1,0 +1,32 @@
+/* type selector */
+body{background-color:#cccccc}
+
+/* id selector */
+#title{
+    color:red;text-decoration: underline
+}
+#box{
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border: 1px dashed blue;
+    color: #666666;
+    text-decoration: line-through;
+}
+
+/* class selector */
+.style-title2{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:24px
+}
+.style-red{
+    color:red
+}
+.style-bk-orange{
+    background-color: orange
+}
+.style-noDisplay{
+    display:none
+}

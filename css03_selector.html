@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- refactoring from css02 -->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>CSS basic selector</title>
+        <link rel="stylesheet" type="text/css" href="css03_selector.css"/>
+    <head>
+    <body>
+        <h3 id="title">第一個標題是三號標題</h3>
+        <div class="style-title2">自己設定的放大變粗標題</div>
+        <!--沒有標籤無法使用CSS-->
+        這裡是沒標籤的文章內容
+        <div id="box">
+            這是有<span class="style-red">標籤</span>的內容
+            <div class="style-bk-orange">下一行</div>
+        </div>
+        <div class="style-noDisplay">invisible WAH</div>
+
+        <h3 id="title" >這是相同的是三號標題加橘底</h3>
+        <div class="style-title2">這是相同的放大變粗標題</div>
+        <!--沒有標籤無法使用CSS-->
+        這是相同的沒標籤的文章內容
+        <div id="box" class="style-bk-orange">
+            整個變成橘底
+            這是相同的<span class="style-red">標籤</span>的內容
+            <div>這是相同的下一行</div>
+        </div>
+        <div class="style-noDisplay">invisible WAH</div>
+    </body>
+</html>
