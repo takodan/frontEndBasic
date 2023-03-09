@@ -200,3 +200,37 @@ item項目：其他區塊裡面的區塊，也可能同時是包覆內層的容�
     - 垂直靠上(預設值)：`align-item:flex-start`
     - 垂直靠中：`align-items:center`
     - 垂直靠下：`align-item:flex-end`
+
+&nbsp;  
+&nbsp;  
+
+## 0309 RWD回應式設計
+Responsive Web Design，讓排版根據螢幕尺寸自動做調整  
+### CSS Media Query
+```css
+@media(ifScreenSize){
+    /* apply these css code */
+}
+```
+### 排版變化
+1. 在容器中的項目單行或多行顯示
+    - 可換行：`flex-wrap:wrap;`
+    - 相反換行(由最後一行開始，往回換行)：`flex-wrap:wrap-reverse;`
+2. 文字大小變化
+    - 直接調整`font-size:;`
+3. 是否要換行
+    - 透過編輯css顯示或隱藏<br/>來達成
+    - 換行 `br{display:block}`
+    - 不換行 `br{display:none}`
+4. 切換不同版面
+    - 設定兩個版本的class
+```css
+.desktop{display:block}
+.mobile{display:none}
+
+@media(max-width:500px){
+    /* 螢幕寬度小於500 */
+    .desktop{display:none}
+    .mobile{display:block}
+}
+```
