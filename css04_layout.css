@@ -1,0 +1,42 @@
+.frame{
+    display: flex;
+}
+.left{
+    background-color: red;
+    flex:none;
+    width:300px;
+}
+.mid{
+    background-color: orange;
+    flex:auto;
+}
+.right{
+    display: flex;
+    flex-wrap: wrap; /* 可換行 */
+    justify-content: center;
+    background-color: yellow;
+    flex:none;
+    width:30%;
+}
+.title_item{
+    flex:none;
+    width:100%;
+    text-align: center;
+}
+.item{
+    background-color: greenyellow;
+    flex:none;
+    width:50px;
+    text-align: center;
+}
+.wah{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height:300px;
+}
+.text{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
