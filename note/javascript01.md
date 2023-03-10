@@ -1,5 +1,5 @@
 # Java Script
-this note will write in chinese, may skip a lot of coding fundamentals
+this note will write in chinese, may skip some coding fundamentals
 # 0310 JS intro; JavaScript 簡介、快速開始
 製作動態網頁的基礎  
 ## script 標籤
@@ -39,10 +39,10 @@ this note will write in chinese, may skip a lot of coding fundamentals
 # 0301 JS variable; JavaScript 變數、常數
 ## 變數 variable
 可命名、存放資料的空間  
-## 宣告變數 declare variable
+## 宣告變數 assign variable
 ```js
 let x;
-x=1
+x=1 // assign
 let variableName="data";
 ```
 ## 常數 constant
