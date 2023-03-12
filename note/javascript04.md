@@ -6,11 +6,11 @@ this note will write in chinese, may skip some coding fundamentals
 ```js
 function functionName(parameterName1, paramaterName2,...){
     // code block
-}
+};
 // as same as
 let functionName=function(parameterName1, paramaterName2,...){
     // code block
-}
+};
 
 functionName(parameter);
 ```
@@ -28,11 +28,11 @@ functionName(parameter);
 function functionName(p1, p2,...){
     // code block
     return; // return undefined
-}
+};
 // as same as function without return
 
 function functionName(p1, p2,...){
     // code block
-    return data; // return undefined
-}
+    return data; // return data
+};
 ```

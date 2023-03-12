@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>js object</title>
+    </head>
+    <body>
+        <script>
+            // Object
+            let man= new Object(); // 空白物件
+            man.age= 20;
+            man.name= "Man";
+            man.talk=function(){
+                console.log("Hello, you can call me", this.name, ".", "I'm ", this.age)
+            };
+
+            console.log(man);
+            man.talk();
+
+            // JSON
+            let woman={
+                age: 20,
+                name: "Woman",
+                talk: function(){
+                    console.log("Hello, you can call me", this.name, ".", "I'm ", this.age)
+                }
+            };
+
+            console.log(woman);
+            woman.talk();
+
+            // Array
+            arr= [11, 22, 33];
+            arr.push(44);
+            console.log(arr);
+            console.log(arr[1]);
+            console.log(arr.length);
+
+            // for + Array
+            let total= 0
+            for(let i= 0; i<arr.length; i++){
+                total+= arr[i];
+            };
+            console.log(total);
+        </script>
+    </body>
+</html>
