@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>js flow</title>
+    </head>
+    <body>
+        <script>
+            let money = prompt("take out","");
+            if(money < 100){
+                console.log("too little");
+            }else if(money <= 10000){
+                console.log("ok");
+            }else{
+                console.log("too much");
+            }
+
+            console.log("condition end");
+            
+            let num = prompt("number","")
+            let result = 0;
+            for(let n = 0; n <= num; n++){
+                if( num >= 100){
+                    break; // num must < 100
+                }
+                else if(n == 3){ // skip 3
+                    continue;
+                }
+                result+= n;
+            }
+
+            console.log(result);
+            console.log("loop end");
+
+        </script>
+    </body>
+</html>

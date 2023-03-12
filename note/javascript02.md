@@ -11,4 +11,4 @@ this note will write in chinese, may skip some coding fundamentals
 加一++ 減一-- 布林值反運算!  
 ## 邏輯運算
 AND(且) && OR(或)||  
-## \! TIPS \! 鍵盤輸入：prompt(string1提示語, string2預設值) //有更好的方式
+## \! TIPS \! 鍵盤輸入：`prompt(string1提示語, string2預設值)` //有更好的方式
