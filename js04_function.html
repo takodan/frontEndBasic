@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>js function</title>
+    </head>
+    <body>
+        <script>
+            function test(message, n1, n2){
+                console.log(message)
+                let result = n1 + n2
+                console.log(result)
+            }
+
+            test(); // undefined, NaN
+            test("Hello") // Hello, NaN
+            test("WAH", 1, 4) // WAH, 5
+            // NaN: not a number
+
+            /*erro: 'test' has already been declared
+            let test = function(message, n1, n2){
+                console.log(message)
+                let result = n1 + n2
+                console.log(result)
+            }
+            */
+
+            let wah = function(message, n1, n2){
+                console.log(message)
+                let result = n1 - n2
+                return result
+            }
+
+            console.log(wah("WAH", 1, 4)) // WAH, -3 
+
+        </script>
+    </body>
+</html>
