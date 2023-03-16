@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>js event handling</title>
+        <style>
+            .btn{
+                background-color: #39c5bb;
+                padding: 8px;
+                border-radius: 5px; /* 圓角 */
+                cursor: pointer; /* 滑鼠游標 */
+            }
+        </style>
+    </head>
+    <body>
+        <button
+            onclick= "console.log('click');"
+            onmouseover= "console.log('mouseover');"
+            onmouseout= "console.log('mouseout');"
+            onmousedown= "console.log('mousedown');"
+            onmouseup= "console.log('mouseup');"
+        >click me</button>
+        <span class="btn"
+            onmouseover= "over(this);"
+            onmouseout= "out(this);"
+            onmousedown= "down(this);"
+            onmouseup= "up(this);"
+        >click mi</span>
+        <script>
+            function over(elem){
+                // console.log("over");
+                elem.style.backgroundColor="#1B8A6B";
+            }
+            function out(elem){
+                elem.style.backgroundColor="#39c5bb";
+            }
+            function down(elem){
+                console.log("down");
+                elem.style.fontWeight="bold";
+            }
+            function up(elem){
+                console.log("up");
+                elem.style.fontWeight="normal";
+            }
+
+        </script>
+    </body>
+</html>
