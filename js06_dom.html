@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>js dom</title>
+        <style>
+            .textUnderLine{text-decoration:underline}
+        </style>
+    </head>
+    <body>
+        <h1 id= "title1" style="display:block"> webpage manipulate </h1>
+        <h1 id= "title2" style="display:none;"> WAH!
+            <span id="wah1" onclick="fwah1()">1</span>
+            <span id="wah2" onclick="fwah2()">2</span>
+            <span id="wah3" onclick="fwah3()">3</span>
+        </h1>
+        <button id= "button1" style="display:block" onclick= "fwah()">next page</button>
+        <h2>
+            <div id="happy" style="display: none;">We are happy!</div>
+            <div id="here" style="display: none;">We are here!</div>
+            <div id="hungry" style="display: none;">We are hungry!</div>
+        </h2>
+
+        <script>
+            // HTML DOM 結構最上層 windows
+            console.log(window);
+            // 頁面長寬
+            console.log(window.innerWidth, window.innerHeight);
+            // 螢幕長寬
+            console.log(window.screen.width, window.screen.height);
+            // 網址
+            console.log(window.location.href);
+            // 跳轉網頁
+            // window.location.href="https://www.google.com";
+            
+            // document
+            console.log(window.document);
+            // dir(object), display all object properties
+            console.dir(document);
+            // title
+            console.log(document.title);
+            // 更改 title
+            document.title="new title";
+            // body
+            console.log(document.body);
+            // body innerHTML 內文
+            console.log(document.body.innerHTML);
+
+            function fwah(){
+                // change html body content
+                let title1= document.querySelector("#title1");
+                let title2= document.querySelector("#title2");
+                let button1= document.querySelector("#button1");
+                title1.style.display="none";
+                title2.style.display="block";
+                button1.style.display="none";
+                
+            }
+            function fwah1(){
+                let happy=document.querySelector("#happy")
+                let here=document.querySelector("#here")
+                let hungry=document.querySelector("#hungry")
+                let wah1=document.querySelector("#wah1")
+                happy.style.display="block";
+                here.style.display="none";
+                hungry.style.display="none";
+                wah1.style.color="purple";
+                wah1.className="textUnderLine";
+            }
+            function fwah2(){
+                let happy=document.querySelector("#happy");
+                let here=document.querySelector("#here");
+                let hungry=document.querySelector("#hungry");
+                let wah2=document.querySelector("#wah2")
+                happy.style.display="none";
+                here.style.display="block";
+                hungry.style.display="none";
+                wah2.style.color="purple";
+                wah2.className="textUnderLine";
+            }
+            function fwah3(){
+                let happy=document.querySelector("#happy");
+                let here=document.querySelector("#here");
+                let hungry=document.querySelector("#hungry");
+                let wah3=document.querySelector("#wah3")
+                happy.style.display="none";
+                here.style.display="none";
+                hungry.style.display="block";
+                wah3.style.color="purple";
+                wah3.className="textUnderLine";
+            }
+
+        </script>
+    </body>
+</html>
